@@ -153,6 +153,9 @@ header{
   .noticiasinicio {
     flex-wrap: wrap;
   }
+  .espaciado{
+    margin-bottom: 3%;
+  }
 }
 /*Noticias, Foto noticia + pie de foto*/
 .espaciado{
