@@ -1,40 +1,47 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-           targetNamespace="datos.xsd" 
-           xmlns="datos.xsd" 
-           elementFormDefault="qualified" 
-           attributeFormDefault="unqualified">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="equipos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="cardinals" minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="cardinals">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombreequipo" minOccurs="0">
+                            <xs:element name="nombreequipo">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="entrenador" minOccurs="0">
+                            <xs:element name="entrenador">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="nombre" type="xs:string"/>
-                                        <xs:element name="imagen" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="jugadores" minOccurs="0">
+                            <xs:element name="jugadores">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="jugador" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:element name="jugador" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="nombre" type="xs:string"/>
-                                                    <xs:element name="imagen" type="xs:string"/>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
                                                 </xs:sequence>
-                                                <xs:attribute name="posicion" type="xs:string"/>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -43,7 +50,307 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <!-- Agrega más elementos de equipo según sea necesario -->
+                <xs:element name="cowboys">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombreequipo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="class" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="raiders">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="steelers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="rams">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="chiefs">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bengals">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bears">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="entrenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugadores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="posicion" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Cornerback (CB)" />
+                                                            <xs:enumeration value="Linebackers (LB)" />
+                                                            <xs:enumeration value="Safety (SAF)" />
+                                                            <xs:enumeration value="Wide Receiver (WR)" />
+                                                            <xs:enumeration value="Quarterback (QB)" />
+                                                            <xs:enumeration value="Defensive Tackle (DT)" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
