@@ -7,17 +7,17 @@
     <xs:element name="equipos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="cardinals" maxOccurs="unbounded">
+                <xs:element name="cardinals" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombreequipo">
+                            <xs:element name="nombreequipo" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="entrenador">
+                            <xs:element name="entrenador" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string"/>
@@ -25,10 +25,10 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="jugadores">
+                            <xs:element name="jugadores" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="jugador" maxOccurs="unbounded">
+                                        <xs:element name="jugador" minOccurs="0" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="nombre" type="xs:string"/>
@@ -43,6 +43,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <!-- Agrega más elementos de equipo según sea necesario -->
             </xs:sequence>
         </xs:complexType>
     </xs:element>
