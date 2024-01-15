@@ -33,6 +33,13 @@
     </header>
     <!-- Siguientes Jornadas y cada partido -->
     <div class="divpartidos">
+      <div class="select">
+        <select>
+          <option value="1">TEMPORADA 1</option>
+          <option value="2">TEMPORADA 2</option>
+          <option value="3">TEMPORADA 3</option>
+        </select>
+      </div>
       <!-- Seleccion de la jornada -->
       <ul class="jornadas">
         <li><a id="active" href="calendario.html">J1</a></li>
@@ -410,17 +417,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    // Obtén todos los elementos de la clase 'jornadas'
-    var jornadasLinks = document.querySelectorAll('.jornadas a');
-  
-    // Agrega un evento click solo a los enlaces de la jornada 3 hasta la jornada 10
-    for (var i = 2; i < 10; i++) {
-      jornadasLinks[i].addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('Estas jornadas aún no están implementadas','Lo sentimos');
-      });
-    }
-  </script>
-  
+  <script src="../scripts/script.js"></script>
 </html>
