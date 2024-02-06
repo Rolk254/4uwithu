@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="calendar.xsl"?>
+<temporada xsi:noNamespaceSchemaLocation="calendar.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <numtemp>Temporada 3</numtemp>
+    <jornada num="1">
+        <partido>
+            <fecha>Miercoles, 5 de junio</fecha>
+            <hora>20:15</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>25</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>45</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Jueves, 6 de junio</fecha>
+            <hora>21:45</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>20</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>35</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Viernes, 7 de junio</fecha>
+            <hora>23:30</hora>
+            <equipos>
+                <local>Bengals</local>
+                <puntoslocal>40</puntoslocal>
+                <visitante>Rams</visitante>
+                <puntosvisitante>30</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>
+    <jornada num="2">
+        <partido>
+            <fecha>Viernes, 14 de junio</fecha>
+            <hora>19:15</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>20</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>25</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sábado, 15 de junio</fecha>
+            <hora>21:00</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>15</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>20</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 16 de junio</fecha>
+            <hora>18:30</hora>
+            <equipos>
+                <local>Rams</local>
+                <puntoslocal>25</puntoslocal>
+                <visitante>Bengals</visitante>
+                <puntosvisitante>30</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="3">
+        <partido>
+            <fecha>Viernes, 21 de junio</fecha>
+            <hora>16:30</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Bengals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 22 de junio</fecha>
+            <hora>18:00</hora>
+            <equipos>
+                <local>Rams</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 23 de junio</fecha>
+            <hora>20:00</hora>
+            <equipos>
+                <local>Cowboys</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cardinals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="4">
+        <partido>
+            <fecha>Viernes, 28 de junio</fecha>
+            <hora>17:15</hora>
+            <equipos>
+                <local>Bengals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Raiders</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 29 de junio</fecha>
+            <hora>18:45</hora>
+            <equipos>
+                <local>Steelers</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Rams</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 30 de junio</fecha>
+            <hora>20:30</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="5">
+        <partido>
+            <fecha>Viernes, 5 de julio</fecha>
+            <hora>17:15</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cardinals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 6 de julio</fecha>
+            <hora>18:45</hora>
+            <equipos>
+                <local>Bengals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 7 de julio</fecha>
+            <hora>20:30</hora>
+            <equipos>
+                <local>Steelers</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Rams</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="6">
+        <partido>
+            <fecha>Viernes, 12 de julio</fecha>
+            <hora>16:45</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Raiders</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 13 de julio</fecha>
+            <hora>18:15</hora>
+            <equipos>
+                <local>Cowboys</local>
+                <puntoslocal>?</puntoslocal>
+                
+                <visitante>Bengals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 14 de julio</fecha>
+            <hora>21:15</hora>
+            <equipos>
+                <local>Rams</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="7">
+        <partido>
+            <fecha>Viernes, 19 de julio</fecha>
+            <hora>16:30</hora>
+            <equipos>
+                <local>Rams</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 20 de julio</fecha>
+            <hora>18:00</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Bengals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 21 de julio</fecha>
+            <hora>19:30</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="8">
+        <partido>
+            <fecha>Viernes, 26 de julio</fecha>
+            <hora>16:30</hora>
+            <equipos>
+                <local>Cowboys</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Rams</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 27 de julio</fecha>
+            <hora>18:00</hora>
+            <equipos>
+                <local>Bengals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Raiders</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 28 de julio</fecha>
+            <hora>19:30</hora>
+            <equipos>
+                <local>Steelers</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cardinals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="9">
+        <partido>
+            <fecha>Viernes, 2 de agosto</fecha>
+            <hora>16:30</hora>
+            <equipos>
+                <local>Cowboys</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Bengals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 3 de agosto</fecha>
+            <hora>18:00</hora>
+            <equipos>
+                <local>Raiders</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cardinals</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 4 de agosto</fecha>
+            <hora>19:30</hora>
+            <equipos>
+                <local>Steelers</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Rams</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+    <jornada num="10">
+        <partido>
+            <fecha>Viernes, 9 de agosto</fecha>
+            <hora>16:30</hora>
+            <equipos>
+                <local>Bengals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Cowboys</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Sabado, 10 de agosto</fecha>
+            <hora>18:00</hora>
+            <equipos>
+                <local>Cardinals</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Raiders</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+        <partido>
+            <fecha>Domingo, 11 de agosto</fecha>
+            <hora>19:30</hora>
+            <equipos>
+                <local>Rams</local>
+                <puntoslocal>?</puntoslocal>
+                <visitante>Steelers</visitante>
+                <puntosvisitante>?</puntosvisitante>
+            </equipos>
+        </partido>
+    </jornada>    
+</temporada>
